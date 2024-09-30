@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 
 namespace Rechner
@@ -13,11 +13,11 @@ namespace Rechner
             var Zyklen = Convert.ToInt32(Console.ReadLine());//Get max Calculating Zyklen
             
             Console.WriteLine("Bis zu welcher Zahl soll gerechnet werden?");//Ask for max Calculating Number
-            var Zahl = Convert.ToInt32(Console.ReadLine());//Get max Calculating Number
+            var Zahl = Convert.ToInt64(Console.ReadLine());//Get max Calculating Number
 
             Setpath.path();//Get file Path
             
-            var ZahlCount = 0;//Variable for Number Count (Calculated)
+            Int64 ZahlCount = 0;//Variable for Number Count (Calculated)
             for (int i = 0; i < Zahl; i++)//Create an Loop
             {
                 ZahlCount++;//Count the Calculated number
